@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface CircularProgressBarProps {
@@ -68,10 +69,12 @@ export const CircularProgressBar = ({
       </svg>
       {/* Centered Image */}
       {imageSrc && (
-        <img
+        <Image
           src={imageSrc}
+          height={imageSize}
+          width={imageSize}
           alt="center-icon"
-          className="absolute rounded-full"
+          className="absolute rounded-full z-50"
           style={{
             width: imageSize,
             height: imageSize,
@@ -79,9 +82,11 @@ export const CircularProgressBar = ({
         />
       )}
       {/* Optional Percentage Text */}
-      <span className="absolute text-lg font-semibold text-green-500">
-        {/* {percentage}% */}
-      </span>
+      <div className=" flex flex-col absolute text-xl font-semibold text-green-500 z-0">
+        <span>{percentage}%</span>
+
+        <span className="text-sm text-gray-800"> Reviews</span>
+      </div>
     </div>
   );
 };
