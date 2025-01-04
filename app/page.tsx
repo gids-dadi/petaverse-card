@@ -7,7 +7,7 @@ export default function App() {
   const [selectedOption, setSelectedOption] = React.useState("last30days");
   return (
     <div className="flex flex-col w-full  gap-6 items-center justify-center h-[80vh] max-w-[30rem] mx-auto ">
-      <div className="flex gap-8 items-center justify- bg-white  w-full rounded-md  h-full px-8 py-4">
+      <div className="flex gap-8 items-center justify- bg-white  w-full rounded-md  h-full px-8">
         <CircularProgressBar
           percentage={75}
           size={120}
@@ -19,7 +19,7 @@ export default function App() {
           backgroundStrokeWidth={15}
         />
 
-        <div className=" flex flex-col justify-center items-start mr-30">
+        <div className=" flex flex-col justify-center items-start">
           <div className="flex items-center gap-2 p-1  bg-[#ee9b00] rounded-full">
             <Image
               src="/assets/snowflake.png"
@@ -38,7 +38,7 @@ export default function App() {
         </div>
       </div>
 
-      <div className="flex gap-4  items-start justify-start  bg-white  px-8 py-4 w-[30rem] rounded-md h-full ">
+      <div className="flex gap-4  items-center justify-start  bg-white  px-8  w-[30rem] rounded-md h-full ">
         <div className="">
           <CircularProgressBar
             percentage={75}
