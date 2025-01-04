@@ -28,7 +28,7 @@ export default function App() {
               alt="Icon"
             />
           </div>
-          <h3 className="text-black font-semibold text-left text-lg">Titans</h3>
+          <h3 className="text-black font-semibold text-left text-lg">Titan</h3>
           <span
             className="
            text-black font-bold text-left text-xl"
