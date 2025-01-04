@@ -38,7 +38,7 @@ export default function App() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-4  items-center justify-start  bg-white   py-4 w-[30rem] rounded-md h-full ">
+      <div className="flex flex-col gap-4  items-center justify-start  bg-white   pt-4 pb-1 w-[30rem] rounded-md h-full ">
         <div className="flex  gap-4  items-center justify-start  bg-white  px-8  w-[30rem] rounded-md h-full ">
           <div className="">
             <CircularProgressBar
