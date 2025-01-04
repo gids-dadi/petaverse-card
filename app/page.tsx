@@ -52,14 +52,14 @@ export default function App() {
             />
           </div>
 
-          <div className="relative inline-block w-52">
+          <div className="relative inline-block w-full">
             <select
-              className=" block w-full px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-gray-500"
+              className=" block  py-2 text-gray-700 bg-white w-full px-4 border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-gray-500"
               defaultValue="last30days"
             >
               <option value="last30days">Last 30 days</option>
             </select>
-            <div className="absolute inset-y-0 right-0 bottom-[100px] flex items-center px-2 pointer-events-none">
+            <div className="absolute inset-y-0 right-0 bottom-[105px] flex items-center px-2 pointer-events-none">
               <svg
                 className="w-6 h-6 text-gray-400"
                 xmlns="http://www.w3.org/2000/svg"
@@ -97,9 +97,12 @@ export default function App() {
           </div>
         </div>
 
-        <div className="flex items-center justify-between mt-1 bg-gray-200 w-full p-4 rounded-md">
+        <div className="flex items-center justify-between mt-1 bg-gray-200 w-full py-3 px-10  rounded-md">
           <span className="text-black">View all reviews</span>
-          <span className="text-black font-bold"> 4.5</span>
+          <div className="text-black font-bold flex items-center gap-1">
+            <Image src="/assets/star.png" width={20} height={20} alt="Star" />
+            4.5
+          </div>
         </div>
       </div>
     </div>
